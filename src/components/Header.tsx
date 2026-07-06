@@ -217,10 +217,38 @@ export default function Header({
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <div>
-                  <h1 className="text-ces-blue dark:text-sky-400 font-gothic font-extrabold text-sm sm:text-base md:text-lg tracking-tight leading-none uppercase transition-colors duration-300 flex items-center gap-1">
-                    CANDELA GROUP
-                    <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-ces-blue dark:group-hover:text-sky-400 transition-colors" />
-                  </h1>
+                  <div className="flex items-center gap-2">
+
+                    <div className="leading-none">
+
+                      <div
+                        className="
+            text-ces-blue
+            dark:text-sky-400
+            font-extrabold
+            text-[30px]
+            md:text-[32px]
+            tracking-tight"
+                      >
+                        CANDELA
+                      </div>
+
+                      <div
+                        className="
+            text-white
+            dark:text-slate-200
+            font-normal
+            text-[16px]
+            md:text-[18px]"
+                      >
+                        Group
+                      </div>
+
+                    </div>
+
+                    <ChevronDown className="w-4 h-4 text-slate-400" />
+
+                  </div>
                   <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold transition-colors duration-300 mt-1 leading-none">
                     {activeCompany}
                   </p>
