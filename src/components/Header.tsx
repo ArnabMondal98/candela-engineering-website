@@ -22,7 +22,7 @@ export default function Header({
   onToggleAdminView
 }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeCompany, setActiveCompany] = useState('Candela Group');
+  const [activeCompany, setActiveCompany] = useState('Candela Engineering & Services');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showServicesModal, setShowServicesModal] = useState(false);
   const [govtDropdownOpen, setGovtDropdownOpen] = useState(false);
@@ -218,36 +218,30 @@ export default function Header({
               >
                 <div>
                   <div className="flex items-center gap-2">
-
                     <div className="leading-none">
-
                       <div
                         className="
-            text-ces-blue
-            dark:text-sky-400
-            font-extrabold
-            text-[30px]
-            md:text-[32px]
-            tracking-tight"
+                          text-ces-blue
+                          dark:text-sky-400
+                          font-extrabold
+                          text-[30px]
+                          md:text-[32px]
+                          tracking-tight"
                       >
                         CANDELA
                       </div>
-
                       <div
                         className="
-            text-white
-            dark:text-slate-200
-            font-normal
-            text-[16px]
-            md:text-[18px]"
+                          text-white
+                          dark:text-slate-200
+                          font-normal
+                          text-[16px]
+                          md:text-[18px]"
                       >
                         Group
                       </div>
-
                     </div>
-
                     <ChevronDown className="w-4 h-4 text-slate-400" />
-
                   </div>
                   <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold transition-colors duration-300 mt-1 leading-none">
                     {activeCompany}
