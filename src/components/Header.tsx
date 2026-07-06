@@ -232,11 +232,12 @@ export default function Header({
                       </div>
                       <div
                         className="
-                          text-white
-                          dark:text-slate-200
+                          text-slate-800
+                          dark:text-white
                           font-normal
-                          text-[16px]
-                          md:text-[18px]"
+                          text-[18px]
+                          leading-none
+                          -mt-1"
                       >
                         Group
                       </div>
