@@ -240,20 +240,20 @@ export default function Header({
                     <button
                       type="button"
                       onClick={() => {
-                        setActiveCompany('Candela Group');
+                        setActiveCompany('Candela Engineering & Services');
                         setDropdownOpen(false);
                       }}
                       className={`w-full text-left px-4 py-3 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors flex items-center justify-between cursor-pointer ${
-                        activeCompany === 'Candela Group' 
+                        activeCompany === 'Candela Engineering & Services' 
                           ? 'text-ces-blue dark:text-sky-400 font-extrabold' 
                           : 'text-slate-700 dark:text-slate-300'
                       }`}
                     >
                       <div className="flex flex-col">
-                        <span className="font-bold">Candela Group</span>
+                        <span className="font-bold">Candela Engineering & Services</span>
                         <span className="text-[10px] text-slate-400 font-normal mt-0.5">Industrial Electrification & Compliance</span>
                       </div>
-                      {activeCompany === 'Candela Group' && <Check className="w-4 h-4 shrink-0 text-ces-blue dark:text-sky-400" />}
+                      {activeCompany === 'Candela Engineering & Services' && <Check className="w-4 h-4 shrink-0 text-ces-blue dark:text-sky-400" />}
                     </button>
 
                     <button
