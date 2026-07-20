@@ -220,7 +220,7 @@ export const TRADING_DATA: TradingItem[] = [
 
 export const CLIENTS_DATA: ClientItem[] = [
   // Food Agriculture Industry
-  { id: 'cl2', name: 'JSR Grain Energy Pvt. Ltd.', subtitle: 'Ethanol, DDGS & CO2 Manufacturer', industry: 'Food Agriculture Industry' },
+  { id: 'cl2', name: 'JSR Grain Energy Pvt. Ltd.', subtitle: '', industry: '' },
   { id: 'cl14', name: 'THE SUKHJIT STARCH AND CHEMICALS LIMITED', subtitle: 'Evolving with Nature', industry: 'Food Agriculture Industry' },
   { id: 'cl17', name: 'TEESTA AGRO INDUSTRIES LTD.', subtitle: 'Fertilizers & Chemicals', industry: 'Food Agriculture Industry' },
   { id: 'cl20', name: 'EDIBLE GROUP', subtitle: 'Refined Oils & FMCG', industry: 'Food Agriculture Industry' },
