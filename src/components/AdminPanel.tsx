@@ -514,8 +514,8 @@ export default function AdminPanel({ onClose }: AdminPanelProps) {
 
   const handleAddClient = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newClientName || !newClientIndustry) {
-      alert("Please fill out Client Name and Industry.");
+    if (!newClientName) {
+      alert("Please fill out Client Name.");
       return;
     }
 
@@ -523,8 +523,8 @@ export default function AdminPanel({ onClose }: AdminPanelProps) {
     const newClient = {
       id: newId,
       name: newClientName,
-      subtitle: newClientSubtitle || undefined,
-      industry: newClientIndustry,
+      subtitle: '',
+      industry: 'General',
       logo: newClientLogo || undefined
     };
 
@@ -1550,7 +1550,7 @@ export default function AdminPanel({ onClose }: AdminPanelProps) {
                     Add New Client Brand
                   </span>
 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 gap-4">
                     <div>
                       <label className="block text-[10px] uppercase font-bold tracking-wider text-slate-400 mb-1">Company Name *</label>
                       <input
@@ -1558,27 +1558,6 @@ export default function AdminPanel({ onClose }: AdminPanelProps) {
                         placeholder="e.g. TATA STEEL LIMITED"
                         value={newClientName}
                         onChange={(e) => setNewClientName(e.target.value)}
-                        className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-sm px-3.5 py-2 text-xs focus:outline-none"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-wider text-slate-400 mb-1">Subtitle / Location (Optional)</label>
-                      <input
-                        type="text"
-                        placeholder="e.g. Kharagpur Plant"
-                        value={newClientSubtitle}
-                        onChange={(e) => setNewClientSubtitle(e.target.value)}
-                        className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-sm px-3.5 py-2 text-xs focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-wider text-slate-400 mb-1">Industry Classification *</label>
-                      <input
-                        type="text"
-                        placeholder="e.g. Metal & Mining, Solar Energy, Manufacturing"
-                        value={newClientIndustry}
-                        onChange={(e) => setNewClientIndustry(e.target.value)}
                         className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-sm px-3.5 py-2 text-xs focus:outline-none"
                         required
                       />
@@ -1641,14 +1620,6 @@ export default function AdminPanel({ onClose }: AdminPanelProps) {
                               <h4 className="font-display font-extrabold text-xs text-slate-800 dark:text-slate-150 uppercase tracking-wide truncate leading-tight">
                                 {client.name}
                               </h4>
-                              {client.subtitle && (
-                                <p className="text-[10px] text-slate-400 dark:text-slate-500 italic truncate mt-0.5 leading-none">
-                                  {client.subtitle}
-                                </p>
-                              )}
-                              <span className="inline-block bg-slate-100 dark:bg-slate-900 text-slate-500 dark:text-slate-400 text-[8px] font-bold tracking-wider uppercase px-1.5 py-0.5 rounded mt-1">
-                                {client.industry}
-                              </span>
                             </div>
                           </div>
 
