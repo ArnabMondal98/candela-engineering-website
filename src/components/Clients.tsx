@@ -38,7 +38,7 @@ function ClientLogo({ id, name, logo }: { id: string; name: string; logo?: strin
             {/* Right Text */}
             <text x="65" y="38" fontFamily="sans-serif" fontWeight="800" fontSize="19" fill="#15803D">JSR Grain Energy Pvt. Ltd.</text>
             <line x1="65" y1="45" x2="330" y2="45" stroke="#15803D" strokeWidth="1.5" />
-            <text x="65" y="58" fontFamily="sans-serif" fontWeight="600" fontSize="11" fill="#15803D" letterSpacing="0.2">Manufacturer of Ethanol, DDGS & CO₂</text>
+            <text x="65" y="58" fontFamily="sans-serif" fontWeight="600" fontSize="11" fill="#15803D" letterSpacing="0.2"></text>
           </svg>
         </div>
       );
@@ -94,7 +94,7 @@ function ClientLogo({ id, name, logo }: { id: string; name: string; logo?: strin
             <g transform="skewX(-10)">
               <text x="140" y="52" fontFamily="'Arial Black', sans-serif" fontWeight="900" fontSize="44" fill="#DC2626" textAnchor="middle" letterSpacing="-1">NIPHA</text>
             </g>
-            <text x="140" y="70" fontFamily="sans-serif" fontWeight="700" fontSize="8" fill="#475569" textAnchor="middle" letterSpacing="0.8">EXPANDING HORIZONS, UPHOLDING VALUES</text>
+            <text x="140" y="70" fontFamily="sans-serif" fontWeight="700" fontSize="8" fill="#475569" textAnchor="middle" letterSpacing="0.8"></text>
           </svg>
         </div>
       );
@@ -106,7 +106,7 @@ function ClientLogo({ id, name, logo }: { id: string; name: string; logo?: strin
             <rect width="100" height="100" rx="4" fill="#DC2626" />
             <text x="50" y="38" fontFamily="'Arial Black', 'Impact', sans-serif" fontWeight="900" fontSize="26" fill="white" textAnchor="middle" transform="skewX(-8)">STAR</text>
             <text x="50" y="66" fontFamily="'Arial Black', 'Impact', sans-serif" fontWeight="900" fontSize="18" fill="white" textAnchor="middle" transform="skewX(-8)" letterSpacing="0.5">CEMENT</text>
-            <text x="50" y="86" fontFamily="'Georgia', serif" fontWeight="bold" fontSize="7.5" fill="white" textAnchor="middle" italic="true">Solid Setting</text>
+            <text x="50" y="86" fontFamily="'Georgia', serif" fontWeight="bold" fontSize="7.5" fill="white" textAnchor="middle" italic="true"></text>
           </svg>
         </div>
       );
@@ -121,7 +121,7 @@ function ClientLogo({ id, name, logo }: { id: string; name: string; logo?: strin
             <circle cx="135" cy="30" r="22" stroke="#475569" strokeWidth="1" fill="#E2E8F0" />
             <text x="135" y="38" fontFamily="sans-serif" fontWeight="900" fontSize="21" fill="#1F2937" textAnchor="middle">Ferro</text>
             <text x="192" y="19" fontFamily="sans-serif" fontWeight="bold" fontSize="6" fill="#475569">TM</text>
-            <text x="10" y="58" fontFamily="sans-serif" fontWeight="700" fontSize="8" fill="#475569" letterSpacing="0.5">consultation - engineering - delivery</text>
+            <text x="10" y="58" fontFamily="sans-serif" fontWeight="700" fontSize="8" fill="#475569" letterSpacing="0.5"></text>
           </svg>
         </div>
       );
